@@ -23,7 +23,7 @@ public class Main {
     public static void task2() {
         System.out.println("Задача 2");
 
-        int clientDeviceYear=2014; //год изготовления телефона
+        int clientDeviceYear=2016; //год изготовления телефона
         int clientOS=0; // тип ОС 0=iOs; 1-Android
 
         if (clientDeviceYear<2015 && clientOS==0) {
@@ -63,13 +63,43 @@ public class Main {
             System.out.println("Потребуется "+(dostavka+2)+ " дня");
         }else if (deliveryDistance>60 && deliveryDistance<100){
             System.out.println("Потребуется "+(dostavka+3)+ " дня");
+        }else {
+            System.out.println("Извините, но доставки у нас нет");
         }
+
 
 
 
     }public static void task5() {
         System.out.println("Задача 5");
+        int monthNumber = 12;
 
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+
+                System.out.println("Зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+
+                System.out.println("Весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Осень");
+                break;
+            default:
+                System.out.println("Такого месяца не существует");
+        }
 
     }
 }
